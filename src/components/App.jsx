@@ -2,7 +2,8 @@ import { useState } from "react";
 import reactLogo from "../assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import userData from "./userData.json";
+import userData from "../components/userData.json";
+import Profile from "./Profile";
 
 // function App() {
 //   const [count, setCount] = useState(0);
@@ -33,8 +34,6 @@ import userData from "./userData.json";
 //   );
 // }
 
-export default App;
-
 // const userData = {
 //   username: "Jacques Gluke",
 //   tag: "jgluke",
@@ -60,3 +59,4 @@ const App = () => {
     </>
   );
 };
+export default App;
