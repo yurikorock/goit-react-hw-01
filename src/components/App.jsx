@@ -1,3 +1,5 @@
+//App.jsx
+
 import { useState } from "react";
 import reactLogo from "../assets/react.svg";
 import viteLogo from "/vite.svg";
@@ -5,7 +7,7 @@ import "./App.css";
 import userData from "../components/userData.json";
 import Profile from "./Profile";
 import friends from "./FriendList/friends.json";
-import { FriendList } from "./FriendList/FriendList";
+import FriendList from "./FriendList/FriendList";
 
 // function App() {
 //   const [count, setCount] = useState(0);

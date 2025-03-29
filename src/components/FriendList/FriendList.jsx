@@ -1,12 +1,16 @@
-import FriendListItem from "./FriendListItem";
-import friends from "./friends.json";
+//FriendList.jsx
 
-export const FriendList = ({ friends }) => {
+import FriendListItem from "./FriendListItem";
+import css from "./FriendList.module.css";
+
+export default function FriendList({ friends }) {
   return (
-    <ul>
-      <li>
-        <FriendListItem />
-      </li>
+    <ul className={css.cardfriendlist}>
+      {friends.map(({ id, avatar, name, isOnline }) => (
+        <li key={id}>
+          <FriendListItem avatar={avatar} name={name} isOnline={isOnline} />
+        </li>
+      ))}
     </ul>
   );
-};
+}
