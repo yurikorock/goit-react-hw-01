@@ -4,6 +4,8 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import userData from "../components/userData.json";
 import Profile from "./Profile";
+import friends from "./FriendList/friends.json";
+import { FriendList } from "./FriendList/FriendList";
 
 // function App() {
 //   const [count, setCount] = useState(0);
@@ -56,6 +58,7 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
+      <FriendList friends={friends} />
     </>
   );
 };
