@@ -8,6 +8,8 @@ import userData from "../components/userData.json";
 import Profile from "./Profile";
 import friends from "./FriendList/friends.json";
 import FriendList from "./FriendList/FriendList";
+import transactions from "./Transactions/transactions.json";
+import TransactionHistory from "./Transactions/TransactionHistory";
 
 // function App() {
 //   const [count, setCount] = useState(0);
@@ -61,6 +63,7 @@ const App = () => {
         stats={userData.stats}
       />
       <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 };
